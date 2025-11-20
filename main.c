@@ -3,7 +3,7 @@
 #include <math.h>
 #include <windows.h>
 
-#define H 40
+#define H 30
 #define W 40
 
 char canvas[H][W];
@@ -121,7 +121,10 @@ int main()
         renderCanvas();
 
         if(i == 0)
-            Sleep(3000);
+        {
+            printf("Wait a second...\n");
+            Sleep(2000);
+        }
     }
 
     return 0;
